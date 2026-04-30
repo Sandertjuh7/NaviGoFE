@@ -1,0 +1,91 @@
+.sheet {
+  margin-top: 12px;
+  border: 1px solid #222;
+}
+
+.sheetHeader {
+  display: grid;
+  grid-template-columns: 110px 46px 74px 1fr 120px;
+  border-bottom: 1px solid #222;
+  background: #fff;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.sheetHeader > div {
+  padding: 6px 8px;
+  border-right: 1px solid #222;
+}
+
+.sheetHeader > div:last-child {
+  border-right: none;
+}
+
+.sheetRow {
+  display: grid;
+  grid-template-columns: 110px 46px 74px 1fr 120px;
+  border-bottom: 1px solid #222;
+  background: #fff;
+  min-height: 74px;
+}
+
+.sheetRow:last-child {
+  border-bottom: none;
+}
+
+.cell {
+  padding: 8px;
+  border-right: 1px solid #222;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.cell:last-child {
+  border-right: none;
+}
+
+.kmCell {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  align-items: flex-start;
+}
+
+.kmBig {
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.kmSmall {
+  font-size: 11px;
+  color: #333;
+}
+
+.indexBox {
+  width: 24px;
+  height: 24px;
+  border: 1px solid #222;
+  display: grid;
+  place-items: center;
+  font-size: 12px;
+  font-weight: 700;
+  background: #fff;
+}
+
+.infoCell {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  align-items: flex-start;
+}
+
+.infoPrimary {
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.infoSecondary {
+  font-size: 12px;
+  color: #333;
+}
